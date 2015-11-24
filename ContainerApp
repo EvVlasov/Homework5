@@ -1,1 +1,30 @@
+package Container;
+public class App {
+
+    public static void main(String[] args) {
+        Container cnt = new Container();
+        cnt.AddNum(2);
+        cnt.AddNum(10);
+        cnt.AddNum(15);
+        cnt.AddNum(13);
+        cnt.AddNum(15);
+        cnt.PrintContainer();
+        System.out.println();
+        Container cnt2 = new Container();
+        cnt2.AddNum(3);
+        cnt2.AddNum(4);
+        cnt2.AddNum(7);
+        cnt.AddAll(cnt2);
+        cnt.AddNum(17);
+        cnt.PrintContainer();
+
+
+       // cnt.GetByIndex(1);
+      //  System.out.println(cnt.IfContains(2));
+     //   System.out.println(cnt.GetSize());
+      //  cnt.Clear();
+        //cnt.FindIndex(15);
+
+    }
+}
 
